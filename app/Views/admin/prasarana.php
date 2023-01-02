@@ -10,8 +10,8 @@
     <div class="page-heading">
         <div class="page-title">
             <div class="row">
-                <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h3>Data</h3>
+                <div class="col-12 col-md-6 order-md-1 order-last mb-5">
+                    <h3>Data Prasarana</h3>
                     <p class="text-subtitle text-muted"></p>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-first">
@@ -44,8 +44,76 @@
         <section class="section">
             <div class="card">
                 <div class="card-header">
-                    Simple Datatable
+                    <h4>Data Gedung</h4>
+
                 </div>
+                <!-- Modal start -->
+                <section id="form-and-scrolling-components">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <div class="form-group">
+
+                                            <!-- Button trigger for login form modal -->
+                                            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                                                data-bs-target="#inlineForm">
+                                                Tambah Data
+                                            </button>
+
+                                            <!--login form Modal -->
+                                            <div class="modal fade text-left" id="inlineForm" tabindex="-1"
+                                                role="dialog" aria-labelledby="myModalLabel33" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                                                    role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title" id="myModalLabel33">Tambah Data
+                                                                Gedung </h4>
+                                                            <button type="button" class="close" data-bs-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <i data-feather="x"></i>
+                                                            </button>
+                                                        </div>
+                                                        <form action="#">
+                                                            <div class="modal-body">
+                                                                <label>Email: </label>
+                                                                <div class="form-group">
+                                                                    <input type="text" placeholder="Email Address"
+                                                                        class="form-control">
+                                                                </div>
+                                                                <label>Password: </label>
+                                                                <div class="form-group">
+                                                                    <input type="password" placeholder="Password"
+                                                                        class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-light-secondary"
+                                                                    data-bs-dismiss="modal">
+                                                                    <i class="bx bx-x d-block d-sm-none"></i>
+                                                                    <span class="d-none d-sm-block">Close</span>
+                                                                </button>
+                                                                <button type="button" class="btn btn-primary ml-1"
+                                                                    data-bs-dismiss="modal">
+                                                                    <i class="bx bx-check d-block d-sm-none"></i>
+                                                                    <span class="d-none d-sm-block">login</span>
+                                                                </button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- Modal end -->
                 <div class="card-body">
                     <table class="table table-striped" id="table1">
                         <thead>
