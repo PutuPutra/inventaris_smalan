@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/shared/iconly.css">
 
     <script src="https://kit.fontawesome.com/72ae031378.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 
 </head>
 
