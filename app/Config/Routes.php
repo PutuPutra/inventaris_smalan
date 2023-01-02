@@ -44,14 +44,14 @@ $routes->get('/service', 'Admin::service');
 $routes->get('/login', 'Admin::login');
 $routes->get('/register', 'Admin::register');
 $routes->get('/forgot_password', 'Admin::forgot_password');
-$routes->get('/dashboard', 'Admin::dashboard');
-$routes->get('/data', 'Admin::data');
-$routes->get('/sarana', 'Admin::sarana');
-$routes->get('/prasarana', 'Admin::prasarana');
+$routes->get('/dashboard', 'Admin::dashboard', ['filter' => 'login']);
+$routes->get('/data', 'Admin::data', ['filter' => 'login']);
+$routes->get('/sarana', 'Admin::sarana', ['filter' => 'login']);
+$routes->get('/prasarana', 'Admin::prasarana', ['filter' => 'login']);
 $routes->get('/account', 'Admin::account', ['filter' => 'role:super_admin']);
 $routes->get('/settings', 'Admin::settings', ['filter' => 'role:super_admin']);
-$routes->get('/dashboard', 'Admin::dashboard');
-$routes->get('/notifications', 'Admin::notifications');
+$routes->get('/dashboard', 'Admin::dashboard', ['filter' => 'login']);
+$routes->get('/notifications', 'Admin::notifications', ['filter' => 'login']);
 
 /*
  * --------------------------------------------------------------------
