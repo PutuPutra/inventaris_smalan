@@ -38,6 +38,8 @@ $routes->set404Override();
 $routes->get('/', 'Umum::index');
 $routes->get('/kontak', 'Umum::kontak');
 $routes->get('/tentang', 'Umum::tentang');
+
+//admin
 $routes->get('/service', 'Admin::service');
 $routes->get('/login', 'Admin::login');
 $routes->get('/register', 'Admin::register');
@@ -48,15 +50,8 @@ $routes->get('/sarana', 'Admin::sarana');
 $routes->get('/prasarana', 'Admin::prasarana');
 $routes->get('/account', 'Admin::account', ['filter' => 'role:super_admin']);
 $routes->get('/settings', 'Admin::settings', ['filter' => 'role:super_admin']);
-
-
-//admin
 $routes->get('/dashboard', 'Admin::dashboard');
 $routes->get('/notifications', 'Admin::notifications');
-$routes->get('/profile', 'Admin::profile');
-$routes->get('/sign_in', 'Admin::sign_in');
-$routes->get('/sign_up', 'Admin::sign_up');
-$routes->get('/tables', 'Admin::tables');
 
 /*
  * --------------------------------------------------------------------
