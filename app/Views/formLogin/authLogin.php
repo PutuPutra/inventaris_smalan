@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/49b420f669.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/main/app.css">
     <link rel="stylesheet" href="assets/css/pages/auth.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 </head>
 
 <body>
