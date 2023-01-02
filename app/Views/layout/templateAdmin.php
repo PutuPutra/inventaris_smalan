@@ -86,7 +86,6 @@
                             </a>
                         </li>
 
-
                     </ul>
                 </div>
             </div>
@@ -101,6 +100,7 @@
             <div class="page-heading">
                 <div class="page-title">
                     <div class="row">
+
                         <div class="col-12 col-md-6 order-md-1 order-last mb-4">
                             <h3><?= $heading; ?></h3>
                             <p class="text-subtitle text-muted"></p>
