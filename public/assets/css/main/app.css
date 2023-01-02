@@ -21026,7 +21026,8 @@ body .bi:before {
 
 .form-group[class*=has-icon-] .form-control:focus~.form-control-icon i,
 .form-group[class*=has-icon-] .form-control:focus~.form-control-icon svg {
-    color: #5a8dee
+    color: #000000
+        /* color: #5a8dee */
 }
 
 .form-group[class*=has-icon-] .form-control.form-control-xl {
@@ -21038,7 +21039,8 @@ body .bi:before {
 }
 
 .form-group[class*=has-icon-] .form-control.form-control-xl~.form-control-icon i:before {
-    color: #a6a8aa
+    color: #000000
+        /* color: #a6a8aa */
 }
 
 .form-group[class*=has-icon-] .form-control-icon {

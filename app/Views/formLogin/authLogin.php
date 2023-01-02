@@ -8,7 +8,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/smalan.png">
-
+    <script src="https://kit.fontawesome.com/49b420f669.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/main/app.css">
     <link rel="stylesheet" href="assets/css/pages/auth.css">
 </head>
@@ -30,7 +30,7 @@
                                 class="form-control form-control-xl <?php if (session('errors.login')) : ?>is-invalid<?php endif ?>"
                                 name="login" placeholder="<?= lang('Auth.emailOrUsername') ?>">
                             <div class="form-control-icon">
-                                <i class="bi bi-person"></i>
+                                <i class="fa-solid fa-user"></i>
                             </div>
                             <div class="invalid-feedback">
                                 <?= session('errors.login') ?>
@@ -41,7 +41,7 @@
                                 class="form-control form-control-xl <?php if (session('errors.password')) : ?>is-invalid<?php endif ?>"
                                 placeholder="<?= lang('Auth.password') ?>">
                             <div class="form-control-icon">
-                                <i class="bi bi-shield-lock"></i>
+                                <i class="fa-solid fa-lock"></i>
                             </div>
                             <div class="invalid-feedback">
                                 <?= session('errors.password') ?>
