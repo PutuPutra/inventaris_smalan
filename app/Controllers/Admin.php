@@ -37,24 +37,19 @@ class Admin extends BaseController
     public function dashboard()
     {
         $data = [
+            'heading' => 'Dashboard',
             'sidebar1' => 'active',
             'sidebar2' => null,
             'sidebar3' => null,
+
         ];
         return view('admin/dashboard', $data);
     }
-    public function data()
-    {
-        $data = [
-            'sidebar1' => null,
-            'sidebar2' => 'active',
-            'sidebar3' => null,
-        ];
-        return view('admin/data', $data);
-    }
+
     public function sarana()
     {
         $data = [
+            'heading' => 'Sarana',
             'sidebar1' => null,
             'sidebar2' => 'active',
             'sidebar3' => null,
@@ -64,6 +59,7 @@ class Admin extends BaseController
     public function prasarana()
     {
         $data = [
+            'heading' => 'Prasarana',
             'sidebar1' => null,
             'sidebar2' => null,
             'sidebar3' => 'active',
