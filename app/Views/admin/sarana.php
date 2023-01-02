@@ -3,7 +3,7 @@
 <section class="section">
     <div class="card">
         <div class="card-header">
-            <h4>Data Gedung</h4>
+            <h4>Data Laptop</h4>
 
         </div>
         <!-- Modal start -->
@@ -28,8 +28,8 @@
                                             role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h4 class="modal-title" id="myModalLabel33">Tambah Data
-                                                        Gedung </h4>
+                                                    <h4 class="modal-title" id="myModalLabel33">Tambah Data Laptop
+                                                    </h4>
                                                     <button type="button" class="close" data-bs-dismiss="modal"
                                                         aria-label="Close">
                                                         <i data-feather="x"></i>
@@ -37,27 +37,61 @@
                                                 </div>
                                                 <form action="#">
                                                     <div class="modal-body">
-                                                        <label>Email: </label>
+                                                        <label>Brand: </label>
                                                         <div class="form-group">
-                                                            <input type="text" placeholder="Email Address"
-                                                                class="form-control">
+                                                            <input type="text" placeholder="brand" class="form-control">
                                                         </div>
-                                                        <label>Password: </label>
+                                                        <label>Seri: </label>
                                                         <div class="form-group">
-                                                            <input type="password" placeholder="Password"
-                                                                class="form-control">
+                                                            <input type="text" placeholder="seri" class="form-control">
+                                                        </div>
+                                                        <label>Harga: </label>
+                                                        <div class="form-group">
+                                                            <input type="text" placeholder="Rp 00" class="form-control">
+                                                        </div>
+                                                        <label>Harga: </label>
+                                                        <div class="form-group">
+                                                            <input type="text" placeholder="Rp 00" class="form-control">
+                                                        </div>
+                                                        <label>Harga: </label>
+                                                        <div class="form-group">
+                                                            <input type="text" placeholder="Rp 00" class="form-control">
+                                                        </div>
+                                                        <label>Harga: </label>
+                                                        <div class="form-group">
+                                                            <input type="text" placeholder="Rp 00" class="form-control">
+                                                        </div>
+                                                        <label>Harga: </label>
+                                                        <div class="form-group">
+                                                            <input type="text" placeholder="Rp 00" class="form-control">
+                                                        </div>
+                                                        <label>Harga: </label>
+                                                        <div class="form-group">
+                                                            <input type="text" placeholder="Rp 00" class="form-control">
+                                                        </div>
+                                                        <label>Harga: </label>
+                                                        <div class="form-group">
+                                                            <input type="text" placeholder="Rp 00" class="form-control">
+                                                        </div>
+                                                        <label>Harga: </label>
+                                                        <div class="form-group">
+                                                            <input type="text" placeholder="Rp 00" class="form-control">
+                                                        </div>
+                                                        <label>Harga: </label>
+                                                        <div class="form-group">
+                                                            <input type="text" placeholder="Rp 00" class="form-control">
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-light-secondary"
                                                             data-bs-dismiss="modal">
                                                             <i class="bx bx-x d-block d-sm-none"></i>
-                                                            <span class="d-none d-sm-block">Close</span>
+                                                            <span class="d-none d-sm-block">Tutup</span>
                                                         </button>
                                                         <button type="button" class="btn btn-primary ml-1"
                                                             data-bs-dismiss="modal">
                                                             <i class="bx bx-check d-block d-sm-none"></i>
-                                                            <span class="d-none d-sm-block">login</span>
+                                                            <span class="d-none d-sm-block">Tambahkan</span>
                                                         </button>
                                                     </div>
                                                 </form>
