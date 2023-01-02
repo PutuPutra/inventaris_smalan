@@ -10,14 +10,12 @@
                 <div class="card-content">
                     <div class="card-body">
                         <!-- Button trigger for scrolling content modal -->
-                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
-                            data-bs-target="#exampleModalScrollable">
+                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">
                             Tambah Data
                         </button>
 
                         <!--scrolling content Modal -->
-                        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-scrollable" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -30,104 +28,87 @@
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Email
                                                 address</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                placeholder="name@example.com">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlTextarea1" class="form-label">Example
                                                 textarea</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                rows="3"></textarea>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                         </div>
 
                                     </div>

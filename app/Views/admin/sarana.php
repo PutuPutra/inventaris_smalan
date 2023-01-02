@@ -6,107 +6,151 @@
             <h4>Data Laptop</h4>
 
         </div>
-        <!-- Modal start -->
-        <section id="form-and-scrolling-components">
-            <div class="row">
-                <div class="col-md-6 col-12">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="card-body">
-                                <div class="form-group">
+        <!-- modal start -->
+        <div class="col-md-6 col-12">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <!-- Button trigger for scrolling content modal -->
+                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                            data-bs-target="#exampleModalScrollable">
+                            Tambah Data
+                        </button>
 
-                                    <!-- Button trigger for login form modal -->
-                                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
-                                        data-bs-target="#inlineForm">
-                                        Tambah Data
-                                    </button>
-
-                                    <!--login form Modal -->
-                                    <div class="modal fade text-left" id="inlineForm" tabindex="-1" role="dialog"
-                                        aria-labelledby="myModalLabel33" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-                                            role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h4 class="modal-title" id="myModalLabel33">Tambah Data Laptop
-                                                    </h4>
-                                                    <button type="button" class="close" data-bs-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <i data-feather="x"></i>
-                                                    </button>
-                                                </div>
-                                                <form action="#">
-                                                    <div class="modal-body">
-                                                        <label>Brand: </label>
-                                                        <div class="form-group">
-                                                            <input type="text" placeholder="brand" class="form-control">
-                                                        </div>
-                                                        <label>Seri: </label>
-                                                        <div class="form-group">
-                                                            <input type="text" placeholder="seri" class="form-control">
-                                                        </div>
-                                                        <label>Harga: </label>
-                                                        <div class="form-group">
-                                                            <input type="text" placeholder="Rp 00" class="form-control">
-                                                        </div>
-                                                        <label>Harga: </label>
-                                                        <div class="form-group">
-                                                            <input type="text" placeholder="Rp 00" class="form-control">
-                                                        </div>
-                                                        <label>Harga: </label>
-                                                        <div class="form-group">
-                                                            <input type="text" placeholder="Rp 00" class="form-control">
-                                                        </div>
-                                                        <label>Harga: </label>
-                                                        <div class="form-group">
-                                                            <input type="text" placeholder="Rp 00" class="form-control">
-                                                        </div>
-                                                        <label>Harga: </label>
-                                                        <div class="form-group">
-                                                            <input type="text" placeholder="Rp 00" class="form-control">
-                                                        </div>
-                                                        <label>Harga: </label>
-                                                        <div class="form-group">
-                                                            <input type="text" placeholder="Rp 00" class="form-control">
-                                                        </div>
-                                                        <label>Harga: </label>
-                                                        <div class="form-group">
-                                                            <input type="text" placeholder="Rp 00" class="form-control">
-                                                        </div>
-                                                        <label>Harga: </label>
-                                                        <div class="form-group">
-                                                            <input type="text" placeholder="Rp 00" class="form-control">
-                                                        </div>
-                                                        <label>Harga: </label>
-                                                        <div class="form-group">
-                                                            <input type="text" placeholder="Rp 00" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-light-secondary"
-                                                            data-bs-dismiss="modal">
-                                                            <i class="bx bx-x d-block d-sm-none"></i>
-                                                            <span class="d-none d-sm-block">Tutup</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-primary ml-1"
-                                                            data-bs-dismiss="modal">
-                                                            <i class="bx bx-check d-block d-sm-none"></i>
-                                                            <span class="d-none d-sm-block">Tambahkan</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
-                                            </div>
+                        <!--scrolling content Modal -->
+                        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalScrollableTitle">Tambah Data Gedung</h5>
+                                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                            <i data-feather="x"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
                                         </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Email
+                                                address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Example
+                                                textarea</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-light-secondary" data-bs-dismiss="modal">
+                                            <i class="bx bx-x d-block d-sm-none"></i>
+                                            <span class="d-none d-sm-block">Batal</span>
+                                        </button>
+                                        <button type="button" class="btn btn-primary ml-1" data-bs-dismiss="modal">
+                                            <i class="bx bx-check d-block d-sm-none"></i>
+                                            <span class="d-none d-sm-block">Kirim</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </section>
-        <!-- Modal end -->
+        </div>
+        <!-- modal end -->
         <div class="card-body">
             <table class="table table-striped" id="table1">
                 <thead>
