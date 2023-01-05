@@ -83,7 +83,7 @@
                             </a>
                             <ul class="submenu ">
                                 <li class="submenu-item <?= $submenu1; ?>">
-                                    <a href="<?= base_url('komputer') ?>">Laptop</a>
+                                    <a href="<?= base_url('komputer') ?>">Komputer</a>
                                 </li>
                                 <li class="submenu-item <?= $submenu2; ?>">
                                     <a href="component-badge.html">Buku</a>
