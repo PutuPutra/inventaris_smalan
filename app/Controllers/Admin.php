@@ -7,8 +7,20 @@ class Admin extends BaseController
     public function account()
     {
         $data = [
+            'heading' => 'Account',
             'sidebar1' => null,
             'sidebar2' => null,
+            'sidebar3' => null,
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => null,
         ];
 
         return view('admin/account', $data);
@@ -18,6 +30,18 @@ class Admin extends BaseController
         $data = [
             'sidebar1' => null,
             'sidebar2' => null,
+            'sidebar3' => null,
+            'heading' => 'Settings',
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => null,
         ];
         return view('admin/settings', $data);
     }
@@ -41,21 +65,22 @@ class Admin extends BaseController
             'sidebar1' => 'active',
             'sidebar2' => null,
             'sidebar3' => null,
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => null,
 
         ];
         return view('admin/dashboard', $data);
     }
 
-    public function sarana()
-    {
-        $data = [
-            'heading' => 'Sarana',
-            'sidebar1' => null,
-            'sidebar2' => 'active',
-            'sidebar3' => null,
-        ];
-        return view('admin/sarana', $data);
-    }
+
     public function prasarana()
     {
         $data = [
@@ -63,6 +88,16 @@ class Admin extends BaseController
             'sidebar1' => null,
             'sidebar2' => null,
             'sidebar3' => 'active',
+            'submenu1' => null,
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => null,
         ];
         return view('admin/prasarana', $data);
     }

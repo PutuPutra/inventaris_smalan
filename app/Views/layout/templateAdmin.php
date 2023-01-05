@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-SARPRAS SMALAN</title>
+    <link rel="stylesheet" href="assets/extensions/simple-datatables/style.css">
+    <link rel="stylesheet" href="assets/css/pages/simple-datatables.css">
 
     <link rel="stylesheet" href="assets/css/main/app.css">
     <link rel="stylesheet" href="assets/css/main/app-dark.css">
@@ -13,7 +15,7 @@
 
     <link rel="stylesheet" href="assets/css/shared/iconly.css">
 
-    <script src="https://kit.fontawesome.com/72ae031378.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/49b420f669.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 
 </head>
@@ -73,18 +75,66 @@
                                 <span>Dashboard</span>
                             </a>
                         </li>
-                        <li class="sidebar-item <?= $sidebar2; ?>">
-                            <a href="sarana" class='sidebar-link'>
+
+                        <li class="sidebar-item  has-sub <?= $sidebar2; ?>">
+                            <a href="#" class='sidebar-link'>
                                 <i class="fa-solid fa-laptop"></i>
                                 <span>Sarana</span>
                             </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item <?= $submenu1; ?>">
+                                    <a href="<?= base_url('komputer') ?>">Laptop</a>
+                                </li>
+                                <li class="submenu-item <?= $submenu2; ?>">
+                                    <a href="component-badge.html">Buku</a>
+                                </li>
+                                <li class="submenu-item <?= $submenu3; ?>">
+                                    <a href="component-badge.html">Papan Tulis</a>
+                                </li>
+                                <li class="submenu-item <?= $submenu4; ?>">
+                                    <a href="component-badge.html">Meja</a>
+                                </li>
+                                <li class="submenu-item <?= $submenu5; ?>">
+                                    <a href="component-badge.html">Kursi</a>
+                                </li>
+                                <li class="submenu-item <?= $submenu6; ?>">
+                                    <a href="component-badge.html">Foto</a>
+                                </li>
+                                <li class="submenu-item <?= $submenu7; ?>">
+                                    <a href="component-badge.html">Spidol</a>
+                                </li>
+                                <li class="submenu-item <?= $submenu8; ?>">
+                                    <a href="component-badge.html">Penghapus</a>
+                                </li>
+                                <li class="submenu-item <?= $submenu9; ?>">
+                                    <a href="component-badge.html">Pena</a>
+                                </li>
+                                <li class="submenu-item <?= $submenu10; ?>">
+                                    <a href="component-badge.html">Penggaris</a>
+                                </li>
+
+                            </ul>
                         </li>
-                        <li class="sidebar-item <?= $sidebar3; ?>">
-                            <a href="prasarana" class='sidebar-link'>
+                        <li class="sidebar-item  has-sub <?= $sidebar3; ?>">
+                            <a href="#" class='sidebar-link'>
                                 <i class="fa-solid fa-building"></i>
                                 <span>Prasarana</span>
                             </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href=" <?= base_url('#') ?>">Gedung</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href=" <?= base_url('#') ?>">Lapangan</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href=" <?= base_url('#') ?>">Kendaraan</a>
+                                </li>
+
+                            </ul>
                         </li>
+
+
 
                     </ul>
                 </div>
@@ -160,6 +210,8 @@
         <!-- Need: Apexcharts -->
         <script src="assets/extensions/apexcharts/apexcharts.min.js"></script>
         <script src="assets/js/pages/dashboard.js"></script>
+        <script src="assets/extensions/simple-datatables/umd/simple-datatables.js"></script>
+        <script src="assets/js/pages/simple-datatables.js"></script>
 
 </body>
 

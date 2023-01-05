@@ -3,7 +3,7 @@
 <section class="section">
     <div class="card">
         <div class="card-header">
-            <h4>Data Laptop</h4>
+            <h4>Data Komputer</h4>
         </div>
         <!-- modal start -->
         <div class="col-md-6 col-12">

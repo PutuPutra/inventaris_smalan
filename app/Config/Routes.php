@@ -42,20 +42,24 @@ $routes->get('/tentang', 'Umum::tentang');
 //admin
 $routes->get('/service', 'Admin::service');
 $routes->get('/login', 'Admin::login');
-$routes->get('/register', 'Admin::register');
+$routes->get('/register', 'Admin::register', ['filter' => 'login']);
 $routes->get('/forgot_password', 'Admin::forgot_password');
 $routes->get('/dashboard', 'Admin::dashboard', ['filter' => 'login']);
 $routes->get('/data', 'Admin::data', ['filter' => 'login']);
-$routes->get('/sarana', 'Admin::sarana', ['filter' => 'login']);
 $routes->get('/prasarana', 'Admin::prasarana', ['filter' => 'login']);
 $routes->get('/account', 'Admin::account', ['filter' => 'role:super_admin']);
 $routes->get('/settings', 'Admin::settings', ['filter' => 'role:super_admin']);
 $routes->get('/dashboard', 'Admin::dashboard', ['filter' => 'login']);
 $routes->get('/notifications', 'Admin::notifications', ['filter' => 'login']);
 
+
+// laptop
+$routes->get('/komputer', 'laptopController::komputer', ['filter' => 'login']);
+$routes->get('/tambahLaptop', 'laptopController::tambahLaptop', ['filter' => 'login']);
+
 /*
- * --------------------------------------------------------------------
- * Additional Routing
+* --------------------------------------------------------------------
+* Additional Routing
  * --------------------------------------------------------------------
  *
  * There will often be times that you need additional routing and you
