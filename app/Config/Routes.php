@@ -53,9 +53,14 @@ $routes->get('/dashboard', 'Admin::dashboard', ['filter' => 'login']);
 $routes->get('/notifications', 'Admin::notifications', ['filter' => 'login']);
 
 
+// laptopController
+$routes->post('/store', 'laptopController::store', ['filter' => 'login']);
+
+
 // laptop
 $routes->get('/komputer', 'laptopController::komputer', ['filter' => 'login']);
 $routes->get('/tambahLaptop', 'laptopController::tambahLaptop', ['filter' => 'login']);
+$routes->get('/deleted/(:num)', 'laptopController::deleted/$1', ['filter' => 'login']);
 
 /*
 * --------------------------------------------------------------------

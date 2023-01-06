@@ -22361,3 +22361,8 @@ a {
 .z-1 {
     z-index: 1
 }
+
+
+.table>tbody>tr>td {
+    vertical-align: middle;
+}

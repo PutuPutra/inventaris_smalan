@@ -24,25 +24,34 @@
                 <thead>
                     <tr>
                         <th style="text-align: center;">Brand</th>
-                        <th style="text-align: center;" width="250px">Gambar</th>
+                        <th style="text-align: center; ">Gambar</th>
                         <th style="text-align: center;">Kondisi</th>
-                        <th style="text-align: center;" width="400px">Spesifikasi</th>
+                        <th style="text-align: center;">Spesifikasi</th>
+                        <th style="text-align: center;">Jenis</th>
                         <th style="text-align: center;">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <?php
+
+                    foreach ($files_komputer as $f) : ?>
                     <tr style="text-align: center;">
-                        <td>Graiden</td>
-                        <td>vehicula@gmail.com</td>
-                        <td>076 4820 8838</td>
-                        <td>Offenburg</td>
+                        <td><?= $f->brand_komputer; ?></td>
+                        <td><img class="pictures" src="/assets/foto/<?= $f->gambar_komputer; ?>" alt=""
+                                width="100px"></img></td>
+                        <td><?= $f->kondisi_komputer; ?></td>
+                        <td style="width: 100px;"><?= $f->spesifikasi_komputer; ?></td>
+                        <td><?= $f->jenis_produk_komputer; ?></td>
                         <td>
                             <div class="buttons">
                                 <a href="#" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
-                                <a href="#" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                                <a href="<?= base_url('deleted') . '/' . $f->id ?>" class="btn btn-danger"><i
+                                        class="fa-solid fa-trash"></i></a>
                             </div>
                         </td>
                     </tr>
+                    <?php
+                    endforeach ?>
 
 
                 </tbody>
