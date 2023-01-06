@@ -22366,3 +22366,11 @@ a {
 .table>tbody>tr>td {
     vertical-align: middle;
 }
+
+.eye {
+    position: absolute;
+}
+
+#hide1 {
+    display: none;
+}

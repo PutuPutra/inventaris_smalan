@@ -38,11 +38,16 @@
                             </div>
                         </div>
                         <div class="form-group position-relative has-icon-left mb-4">
-                            <input type="password" name="password"
+                            <input type="password" name="password" id="password"
                                 class="form-control form-control-xl <?php if (session('errors.password')) : ?>is-invalid<?php endif ?>"
                                 placeholder="<?= lang('Auth.password') ?>">
+
                             <div class="form-control-icon">
                                 <i class="bi bi-shield-lock"></i>
+                                <span class="eye" onclick="myFunction()" style="margin-left:270px;">
+                                    <i id="hide1" class="fa-solid fa-eye"></i>
+                                    <i id="hide2" class="fa-solid fa-eye-slash"></i>
+                                </span>
                             </div>
                             <div class="invalid-feedback">
                                 <?= session('errors.password') ?>
@@ -72,6 +77,7 @@
         </div>
 
     </div>
+    <script src="assets/js/password.js"></script>
 </body>
 
 </html>
