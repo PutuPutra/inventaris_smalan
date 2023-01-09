@@ -55,12 +55,25 @@ $routes->get('/notifications', 'Admin::notifications', ['filter' => 'login']);
 
 // laptopController
 $routes->post('/store', 'laptopController::store', ['filter' => 'login']);
+$routes->post('/buku/store', 'bukuController::store', ['filter' => 'login']);
+$routes->post('/papanTulis/store', 'papanTulisController::store', ['filter' => 'login']);
 
 
 // laptop
 $routes->get('/komputer', 'laptopController::komputer', ['filter' => 'login']);
 $routes->get('/tambahLaptop', 'laptopController::tambahLaptop', ['filter' => 'login']);
 $routes->get('/deleted/(:num)', 'laptopController::deleted/$1', ['filter' => 'login']);
+
+
+//buku
+$routes->get('/buku', 'bukuController::buku', ['filter' => 'login']);
+$routes->get('/tambahBuku', 'bukuController::tambahBuku', ['filter' => 'login']);
+$routes->get('/buku/deleted/(:num)', 'bukuController::deleted/$1', ['filter' => 'login']);
+
+//papan tulis
+$routes->get('/papanTulis', 'papanTulisController::papanTulis', ['filter' => 'login']);
+$routes->get('/tambahPapanTulis', 'papanTulisController::tambahPapanTulis', ['filter' => 'login']);
+$routes->get('/papanTulis/deleted/(:num)', 'papanTulisController::deleted/$1', ['filter' => 'login']);
 
 /*
 * --------------------------------------------------------------------

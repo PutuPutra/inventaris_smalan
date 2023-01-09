@@ -86,31 +86,31 @@
                                     <a href="<?= base_url('komputer') ?>">Komputer</a>
                                 </li>
                                 <li class="submenu-item <?= $submenu2; ?>">
-                                    <a href="component-badge.html">Buku</a>
+                                    <a href="<?= base_url('buku') ?>">Buku</a>
                                 </li>
                                 <li class="submenu-item <?= $submenu3; ?>">
-                                    <a href="component-badge.html">Papan Tulis</a>
+                                    <a href="<?= base_url('papanTulis') ?>">Papan Tulis</a>
                                 </li>
                                 <li class="submenu-item <?= $submenu4; ?>">
-                                    <a href="component-badge.html">Meja</a>
+                                    <a href="<?= base_url('meja') ?>">Meja</a>
                                 </li>
                                 <li class="submenu-item <?= $submenu5; ?>">
-                                    <a href="component-badge.html">Kursi</a>
+                                    <a href="<?= base_url('kursi') ?>">Kursi</a>
                                 </li>
                                 <li class="submenu-item <?= $submenu6; ?>">
-                                    <a href="component-badge.html">Foto</a>
+                                    <a href="<?= base_url('foto') ?>">Foto</a>
                                 </li>
                                 <li class="submenu-item <?= $submenu7; ?>">
-                                    <a href="component-badge.html">Spidol</a>
+                                    <a href="<?= base_url('spidol') ?>">Spidol</a>
                                 </li>
                                 <li class="submenu-item <?= $submenu8; ?>">
-                                    <a href="component-badge.html">Penghapus</a>
+                                    <a href="<?= base_url('penghapus') ?>">Penghapus</a>
                                 </li>
                                 <li class="submenu-item <?= $submenu9; ?>">
-                                    <a href="component-badge.html">Pena</a>
+                                    <a href="<?= base_url('pena') ?>">Pena</a>
                                 </li>
                                 <li class="submenu-item <?= $submenu10; ?>">
-                                    <a href="component-badge.html">Penggaris</a>
+                                    <a href="<?= base_url('penggaris') ?>">Penggaris</a>
                                 </li>
 
                             </ul>
