@@ -2,24 +2,24 @@
 
 namespace App\Controllers;
 
-use App\Models\BukuModel;
+use App\Models\MejaModel;
 
-class bukuController extends BaseController
+class mejaController extends BaseController
 {
-    public function buku()
+    public function meja()
     {
-        $buku = new BukuModel();
-        $files_buku = $buku->findAll();
+        $meja = new MejaModel();
+        $files_meja = $meja->findAll();
         $data = [
-            'files_buku' => $files_buku,
-            'heading' => 'Buku',
+            'files_meja' => $files_meja,
+            'heading' => 'Meja',
             'sidebar1' => null,
             'sidebar2' => 'active',
             'sidebar3' => null,
             'submenu1' => null,
-            'submenu2' => 'active',
+            'submenu2' => null,
             'submenu3' => null,
-            'submenu4' => null,
+            'submenu4' => 'active',
             'submenu5' => null,
             'submenu6' => null,
             'submenu7' => null,
@@ -27,19 +27,19 @@ class bukuController extends BaseController
             'submenu9' => null,
             'submenu10' => null,
         ];
-        return view('admin/sarana/buku/fileBuku', $data);
+        return view('admin/sarana/meja/fileMeja', $data);
     }
-    public function tambahBuku()
+    public function tambahMeja()
     {
         $data = [
-            'heading' => 'Tambah Data Buku',
+            'heading' => 'Tambah Data Meja',
             'sidebar1' => null,
             'sidebar2' => 'active',
             'sidebar3' => null,
             'submenu1' => null,
-            'submenu2' => 'active',
+            'submenu2' => null,
             'submenu3' => null,
-            'submenu4' => null,
+            'submenu4' => 'active',
             'submenu5' => null,
             'submenu6' => null,
             'submenu7' => null,
@@ -47,32 +47,26 @@ class bukuController extends BaseController
             'submenu9' => null,
             'submenu10' => null,
         ];
-        return view('admin/sarana/buku/tambahBuku', $data);
+        return view('admin/sarana/meja/tambahMeja', $data);
     }
     public function store()
     {
         $validate = $this->validate([
-            'penerbit_buku' => [
+            'ukuran_meja' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Harus mengisi bagian ini',
                 ],
             ],
-            'kondisi_buku' => [
+            'kondisi_meja' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Harus mengisi bagian ini',
                 ],
             ],
-            'deskripsi_buku' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Harus mengisi bagian ini',
-                ],
-            ],
-            'gambar_buku' => [
-                'label' => 'gambar_buku',
-                'rules' => 'uploaded[gambar_buku]|mime_in[gambar_buku,image/jpg,image/jpeg,image/png]',
+            'gambar_meja' => [
+                'label' => 'gambar_meja',
+                'rules' => 'uploaded[gambar_meja]|mime_in[gambar_meja,image/jpg,image/jpeg,image/png]',
                 'errors' => [
                     'uploaded' => 'Gambar belum pilih',
                     'mime_in' => 'Hanya menerima file berekstensi (jpg, jpeg, png)',
@@ -83,28 +77,27 @@ class bukuController extends BaseController
 
         if (!$validate) {
             // dd($this->request->getFile('gambar_komputer'));
-            return redirect()->to('tambahBuku')->withInput();
+            return redirect()->to('tambahMeja')->withInput();
         }
-        $files = $this->request->getFile('gambar_buku');
+        $files = $this->request->getFile('gambar_meja');
         $names = $files->getName();
         // dd($files);
         $files->move('assets/foto', $names);
         $data = [
-            'gambar_buku' => $names,
-            'penerbit_buku' => $this->request->getPost('penerbit_buku'),
-            'kondisi_buku' => $this->request->getPost('kondisi_buku'),
-            'deskripsi_buku' => $this->request->getPost('deskripsi_buku')
+            'gambar_meja' => $names,
+            'ukuran_meja' => $this->request->getPost('ukuran_meja'),
+            'kondisi_meja' => $this->request->getPost('kondisi_meja')
         ];
         //dd($data);
-        $buku = new BukuModel();
-        $buku->insert($data);
+        $meja = new MejaModel();
+        $meja->insert($data);
 
-        return redirect()->to(base_url('buku'));
+        return redirect()->to(base_url('meja'));
     }
     public function deleted($id = false)
     {
-        $buku = new BukuModel();
-        $buku->delete($id);
-        return redirect()->to(base_url('/buku'));
+        $meja = new MejaModel();
+        $meja->delete($id);
+        return redirect()->to(base_url('/meja'));
     }
 }

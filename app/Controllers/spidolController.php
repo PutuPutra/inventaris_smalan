@@ -2,77 +2,77 @@
 
 namespace App\Controllers;
 
-use App\Models\BukuModel;
+use App\Models\SpidolModel;
 
-class bukuController extends BaseController
+class spidolController extends BaseController
 {
-    public function buku()
+    public function spidol()
     {
-        $buku = new BukuModel();
-        $files_buku = $buku->findAll();
+        $spidol = new SpidolModel();
+        $files_spidol = $spidol->findAll();
         $data = [
-            'files_buku' => $files_buku,
-            'heading' => 'Buku',
+            'files_spidol' => $files_spidol,
+            'heading' => 'Spidol',
             'sidebar1' => null,
             'sidebar2' => 'active',
             'sidebar3' => null,
             'submenu1' => null,
-            'submenu2' => 'active',
+            'submenu2' => null,
             'submenu3' => null,
             'submenu4' => null,
             'submenu5' => null,
             'submenu6' => null,
-            'submenu7' => null,
+            'submenu7' => 'active',
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
         ];
-        return view('admin/sarana/buku/fileBuku', $data);
+        return view('admin/sarana/spidol/fileSpidol', $data);
     }
-    public function tambahBuku()
+    public function tambahSpidol()
     {
         $data = [
-            'heading' => 'Tambah Data Buku',
+            'heading' => 'Tambah Data Spidol',
             'sidebar1' => null,
             'sidebar2' => 'active',
             'sidebar3' => null,
             'submenu1' => null,
-            'submenu2' => 'active',
+            'submenu2' => null,
             'submenu3' => null,
             'submenu4' => null,
             'submenu5' => null,
             'submenu6' => null,
-            'submenu7' => null,
+            'submenu7' => 'active',
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
         ];
-        return view('admin/sarana/buku/tambahBuku', $data);
+        return view('admin/sarana/spidol/tambahSpidol', $data);
     }
     public function store()
     {
         $validate = $this->validate([
-            'penerbit_buku' => [
+            'merk_spidol' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Harus mengisi bagian ini',
                 ],
             ],
-            'kondisi_buku' => [
+            'kondisi_spidol' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Harus mengisi bagian ini',
                 ],
             ],
-            'deskripsi_buku' => [
+            'warna_spidol' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Harus mengisi bagian ini',
                 ],
             ],
-            'gambar_buku' => [
-                'label' => 'gambar_buku',
-                'rules' => 'uploaded[gambar_buku]|mime_in[gambar_buku,image/jpg,image/jpeg,image/png]',
+            'gambar_spidol' => [
+                'label' => 'gambar_spidol',
+                'rules' => 'uploaded[gambar_spidol]|mime_in[gambar_spidol,image/jpg,image/jpeg,image/png]',
                 'errors' => [
                     'uploaded' => 'Gambar belum pilih',
                     'mime_in' => 'Hanya menerima file berekstensi (jpg, jpeg, png)',
@@ -83,28 +83,28 @@ class bukuController extends BaseController
 
         if (!$validate) {
             // dd($this->request->getFile('gambar_komputer'));
-            return redirect()->to('tambahBuku')->withInput();
+            return redirect()->to('tambahSpidol')->withInput();
         }
-        $files = $this->request->getFile('gambar_buku');
+        $files = $this->request->getFile('gambar_spidol');
         $names = $files->getName();
         // dd($files);
-        $files->move('assets/foto', $names);
+        $files->move('assets/spidol', $names);
         $data = [
-            'gambar_buku' => $names,
-            'penerbit_buku' => $this->request->getPost('penerbit_buku'),
-            'kondisi_buku' => $this->request->getPost('kondisi_buku'),
-            'deskripsi_buku' => $this->request->getPost('deskripsi_buku')
+            'gambar_spidol' => $names,
+            'merk_spidol' => $this->request->getPost('merk_spidol'),
+            'kondisi_spidol' => $this->request->getPost('kondisi_spidol'),
+            'warna_spidol' => $this->request->getPost('warna_spidol')
         ];
         //dd($data);
-        $buku = new BukuModel();
-        $buku->insert($data);
+        $spidol = new SpidolModel();
+        $spidol->insert($data);
 
-        return redirect()->to(base_url('buku'));
+        return redirect()->to(base_url('spidol'));
     }
     public function deleted($id = false)
     {
-        $buku = new BukuModel();
-        $buku->delete($id);
-        return redirect()->to(base_url('/buku'));
+        $spidol = new SpidolModel();
+        $spidol->delete($id);
+        return redirect()->to(base_url('/spidol'));
     }
 }

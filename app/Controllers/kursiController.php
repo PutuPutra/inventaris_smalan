@@ -2,77 +2,71 @@
 
 namespace App\Controllers;
 
-use App\Models\BukuModel;
+use App\Models\KursiModel;
 
-class bukuController extends BaseController
+class kursiController extends BaseController
 {
-    public function buku()
+    public function kursi()
     {
-        $buku = new BukuModel();
-        $files_buku = $buku->findAll();
+        $kursi = new KursiModel();
+        $files_kursi = $kursi->findAll();
         $data = [
-            'files_buku' => $files_buku,
-            'heading' => 'Buku',
+            'files_kursi' => $files_kursi,
+            'heading' => 'Kursi',
             'sidebar1' => null,
             'sidebar2' => 'active',
             'sidebar3' => null,
             'submenu1' => null,
-            'submenu2' => 'active',
+            'submenu2' => null,
             'submenu3' => null,
             'submenu4' => null,
-            'submenu5' => null,
+            'submenu5' => 'active',
             'submenu6' => null,
             'submenu7' => null,
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
         ];
-        return view('admin/sarana/buku/fileBuku', $data);
+        return view('admin/sarana/kursi/fileKursi', $data);
     }
-    public function tambahBuku()
+    public function tambahKursi()
     {
         $data = [
-            'heading' => 'Tambah Data Buku',
+            'heading' => 'Tambah Data Kursi',
             'sidebar1' => null,
             'sidebar2' => 'active',
             'sidebar3' => null,
             'submenu1' => null,
-            'submenu2' => 'active',
+            'submenu2' => null,
             'submenu3' => null,
             'submenu4' => null,
-            'submenu5' => null,
+            'submenu5' => 'active',
             'submenu6' => null,
             'submenu7' => null,
             'submenu8' => null,
             'submenu9' => null,
             'submenu10' => null,
         ];
-        return view('admin/sarana/buku/tambahBuku', $data);
+        return view('admin/sarana/kursi/tambahKursi', $data);
     }
     public function store()
     {
         $validate = $this->validate([
-            'penerbit_buku' => [
+            'ukuran_kursi' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Harus mengisi bagian ini',
                 ],
             ],
-            'kondisi_buku' => [
+            'kondisi_kursi' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Harus mengisi bagian ini',
                 ],
             ],
-            'deskripsi_buku' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Harus mengisi bagian ini',
-                ],
-            ],
-            'gambar_buku' => [
-                'label' => 'gambar_buku',
-                'rules' => 'uploaded[gambar_buku]|mime_in[gambar_buku,image/jpg,image/jpeg,image/png]',
+            'gambar_kursi' => [
+                'label' => 'gambar_kursi',
+                'rules' => 'uploaded[gambar_kursi]|mime_in[gambar_kursi,image/jpg,image/jpeg,image/png]',
                 'errors' => [
                     'uploaded' => 'Gambar belum pilih',
                     'mime_in' => 'Hanya menerima file berekstensi (jpg, jpeg, png)',
@@ -83,28 +77,27 @@ class bukuController extends BaseController
 
         if (!$validate) {
             // dd($this->request->getFile('gambar_komputer'));
-            return redirect()->to('tambahBuku')->withInput();
+            return redirect()->to('tambahKursi')->withInput();
         }
-        $files = $this->request->getFile('gambar_buku');
+        $files = $this->request->getFile('gambar_kursi');
         $names = $files->getName();
         // dd($files);
         $files->move('assets/foto', $names);
         $data = [
-            'gambar_buku' => $names,
-            'penerbit_buku' => $this->request->getPost('penerbit_buku'),
-            'kondisi_buku' => $this->request->getPost('kondisi_buku'),
-            'deskripsi_buku' => $this->request->getPost('deskripsi_buku')
+            'gambar_kursi' => $names,
+            'ukuran_kursi' => $this->request->getPost('ukuran_kursi'),
+            'kondisi_kursi' => $this->request->getPost('kondisi_kursi')
         ];
         //dd($data);
-        $buku = new BukuModel();
-        $buku->insert($data);
+        $kursi = new KursiModel();
+        $kursi->insert($data);
 
-        return redirect()->to(base_url('buku'));
+        return redirect()->to(base_url('kursi'));
     }
     public function deleted($id = false)
     {
-        $buku = new BukuModel();
-        $buku->delete($id);
-        return redirect()->to(base_url('/buku'));
+        $kursi = new KursiModel();
+        $kursi->delete($id);
+        return redirect()->to(base_url('/kursi'));
     }
 }

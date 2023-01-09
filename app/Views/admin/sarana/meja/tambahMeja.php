@@ -14,30 +14,35 @@ use Faker\Provider\Base;
                         <div class="container">
 
                             <div class="form-group">
-                                <form action="<?= base_url('papanTulis/store') ?>" method="POST" enctype="multipart/form-data">
+                                <form action="<?= base_url('meja/store') ?>" method="POST" enctype="multipart/form-data">
                                     <?= csrf_field(); ?>
                                     <?php $validation = \Config\Services::validation(); ?>
                                     <div class="mb-3">
-                                        <label for="ukuran_papan_tulis" class="form-label" <?= $validation->hasError('ukuran_papan_tulis') ? 'is-invalid' : null; ?>>Ukuran</label>
-                                        <input type="text" class="form-control" id="ukuran_papan_tulis" name="ukuran_papan_tulis" aria-describedby="ukuran" placeholder="30 cm">
+                                        <label for="ukuran_meja" class="form-label"
+                                            <?= $validation->hasError('ukuran_meja') ? 'is-invalid' : null; ?>>Ukuran</label>
+                                        <input type="text" class="form-control" id="ukuran_meja"
+                                            name="ukuran_meja" aria-describedby="penerbit" placeholder="10 cm">
                                         <div class="invalid-feedback">
-                                            <?= $validation->getError('ukuran_papan_tulis'); ?>
+                                            <?= $validation->getError('ukuran_meja'); ?>
                                         </div>
 
                                     </div>
                                     <div class="mb-3">
-                                        <label for="gambar_papan_tulis" class="form-label" <?= $validation->hasError('gambar_papan_tulis') ? 'is-invalid' : null; ?>>Gambar</label>
-                                        <input class="form-control" type="file" id="gambar_papan_tulis" name="gambar_papan_tulis">
+                                        <label for="gambar_meja" class="form-label"
+                                            <?= $validation->hasError('gambar_meja') ? 'is-invalid' : null; ?>>Gambar</label>
+                                        <input class="form-control" type="file" id="gambar_meja"
+                                            name="gambar_meja">
                                         <div class="invalid-feedback">
-                                            <?= $validation->getError('gambar_papan_tulis'); ?>
+                                            <?= $validation->getError('gambar_meja'); ?>
                                         </div>
                                     </div>
                                     <div class="col-auto mb-4">
                                         <p>Kondisi</p>
 
                                         <fieldset class="form-group">
-                                            <select class="form-select" id="kondisi_papan_tulis" name="kondisi_papan_tulis" <?= $validation->hasError('kondisi_papan_tulis') ? 'is-invalid' : null; ?>>
-                                                <option selected>Pilih Kondisi Papan Tulis</option>
+                                            <select class="form-select" id="kondisi_meja" name="kondisi_meja"
+                                                <?= $validation->hasError('kondisi_meja') ? 'is-invalid' : null; ?>>
+                                                <option selected>Pilih Kondisi Meja</option>
                                                 <option value="Baik">Baik</option>
                                                 <option value="Kerusakan Ringan">Kerusakan Ringan</option>
                                                 <option value="Kerusakan Sedang">Kerusakan Sedang</option>
@@ -45,14 +50,14 @@ use Faker\Provider\Base;
                                             </select>
                                         </fieldset>
                                         <div class="invalid-feedback">
-                                            <?= $validation->getError('kondisi_papan_tulis'); ?>
+                                            <?= $validation->getError('kondisi_meja'); ?>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-success float-end mb-4 mt-2">Submit</button>
                                 </form>
 
                                 <div class="buttons" style="margin-top:28px;">
-                                    <a href="<?= base_url('papanTulis') ?>" class="btn btn-warning">Kembali</a>
+                                    <a href="<?= base_url('meja') ?>" class="btn btn-warning">Kembali</a>
                                 </div>
 
                             </div>

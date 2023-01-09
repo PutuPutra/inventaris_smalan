@@ -16,9 +16,9 @@ class papanTulisController extends BaseController
             'sidebar1' => null,
             'sidebar2' => 'active',
             'sidebar3' => null,
-            'submenu1' => 'active',
+            'submenu1' => null,
             'submenu2' => null,
-            'submenu3' => null,
+            'submenu3' => 'active',
             'submenu4' => null,
             'submenu5' => null,
             'submenu6' => null,
@@ -36,9 +36,9 @@ class papanTulisController extends BaseController
             'sidebar1' => null,
             'sidebar2' => 'active',
             'sidebar3' => null,
-            'submenu1' => 'active',
+            'submenu1' => null,
             'submenu2' => null,
-            'submenu3' => null,
+            'submenu3' => 'active',
             'submenu4' => null,
             'submenu5' => null,
             'submenu6' => null,
@@ -53,6 +53,12 @@ class papanTulisController extends BaseController
     {
         $validate = $this->validate([
             'ukuran_papan_tulis' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Harus mengisi bagian ini',
+                ],
+            ],
+            'kondisi_papan_tulis' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Harus mengisi bagian ini',
@@ -79,7 +85,8 @@ class papanTulisController extends BaseController
         $files->move('assets/foto', $names);
         $data = [
             'gambar_papan_tulis' => $names,
-            'ukuran_papan_tulis' => $this->request->getPost('ukuran_papan_tulis')
+            'ukuran_papan_tulis' => $this->request->getPost('ukuran_papan_tulis'),
+            'kondisi_papan_tulis' => $this->request->getPost('kondisi_papan_tulis')
         ];
         //dd($data);
         $papanTulis = new PapanTulisModel();

@@ -64,16 +64,53 @@ $routes->get('/komputer', 'laptopController::komputer', ['filter' => 'login']);
 $routes->get('/tambahLaptop', 'laptopController::tambahLaptop', ['filter' => 'login']);
 $routes->get('/deleted/(:num)', 'laptopController::deleted/$1', ['filter' => 'login']);
 
+// bukuController
+$routes->post('/buku/store', 'bukuController::store', ['filter' => 'login']);
 
 //buku
 $routes->get('/buku', 'bukuController::buku', ['filter' => 'login']);
 $routes->get('/tambahBuku', 'bukuController::tambahBuku', ['filter' => 'login']);
 $routes->get('/buku/deleted/(:num)', 'bukuController::deleted/$1', ['filter' => 'login']);
 
+// papanTulisController
+$routes->post('/papanTulis/store', 'papanTulisController::store', ['filter' => 'login']);
+
 //papan tulis
 $routes->get('/papanTulis', 'papanTulisController::papanTulis', ['filter' => 'login']);
 $routes->get('/tambahPapanTulis', 'papanTulisController::tambahPapanTulis', ['filter' => 'login']);
 $routes->get('/papanTulis/deleted/(:num)', 'papanTulisController::deleted/$1', ['filter' => 'login']);
+
+// mejaController
+$routes->post('/meja/store', 'mejaController::store', ['filter' => 'login']);
+
+// meja
+$routes->get('/meja', 'mejaController::meja', ['filter' => 'login']);
+$routes->get('/tambahMeja', 'mejaController::tambahMeja', ['filter' => 'login']);
+$routes->get('/meja/deleted/(:num)', 'mejaController::deleted/$1', ['filter' => 'login']);
+
+// kursiController
+$routes->post('/kursi/store', 'kursiController::store', ['filter' => 'login']);
+
+// meja
+$routes->get('/kursi', 'kursiController::kursi', ['filter' => 'login']);
+$routes->get('/tambahKursi', 'kursiController::tambahKursi', ['filter' => 'login']);
+$routes->get('/kursi/deleted/(:num)', 'kursiController::deleted/$1', ['filter' => 'login']);
+
+// fotoController
+$routes->post('/foto/store', 'fotoController::store', ['filter' => 'login']);
+
+// foto
+$routes->get('/foto', 'fotoController::foto', ['filter' => 'login']);
+$routes->get('/tambahFoto', 'fotoController::tambahFoto', ['filter' => 'login']);
+$routes->get('/foto/deleted/(:num)', 'fotoController::deleted/$1', ['filter' => 'login']);
+
+// spidolController
+$routes->post('/spidol/store', 'spidolController::store', ['filter' => 'login']);
+
+// spidol
+$routes->get('/spidol', 'spidolController::spidol', ['filter' => 'login']);
+$routes->get('/tambahSpidol', 'spidolController::tambahSpidol', ['filter' => 'login']);
+$routes->get('/spidol/deleted/(:num)', 'spidolController::deleted/$1', ['filter' => 'login']);
 
 /*
 * --------------------------------------------------------------------
