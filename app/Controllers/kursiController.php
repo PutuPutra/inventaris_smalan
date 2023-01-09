@@ -68,7 +68,7 @@ class kursiController extends BaseController
                 'label' => 'gambar_kursi',
                 'rules' => 'uploaded[gambar_kursi]|mime_in[gambar_kursi,image/jpg,image/jpeg,image/png]',
                 'errors' => [
-                    'uploaded' => 'Gambar belum pilih',
+                    'uploaded' => 'Gambar belum dipilih',
                     'mime_in' => 'Hanya menerima file berekstensi (jpg, jpeg, png)',
 
                 ],

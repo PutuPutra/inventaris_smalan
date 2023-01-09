@@ -74,7 +74,7 @@ class spidolController extends BaseController
                 'label' => 'gambar_spidol',
                 'rules' => 'uploaded[gambar_spidol]|mime_in[gambar_spidol,image/jpg,image/jpeg,image/png]',
                 'errors' => [
-                    'uploaded' => 'Gambar belum pilih',
+                    'uploaded' => 'Gambar belum dipilih',
                     'mime_in' => 'Hanya menerima file berekstensi (jpg, jpeg, png)',
 
                 ],

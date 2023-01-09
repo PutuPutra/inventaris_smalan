@@ -68,7 +68,7 @@ class papanTulisController extends BaseController
                 'label' => 'gambar_papan_tulis',
                 'rules' => 'uploaded[gambar_papan_tulis]|mime_in[gambar_papan_tulis,image/jpg,image/jpeg,image/png]',
                 'errors' => [
-                    'uploaded' => 'Gambar belum pilih',
+                    'uploaded' => 'Gambar belum dipilih',
                     'mime_in' => 'Hanya menerima file berekstensi (jpg, jpeg, png)',
 
                 ],

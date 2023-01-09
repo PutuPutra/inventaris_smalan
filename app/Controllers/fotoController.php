@@ -68,7 +68,7 @@ class fotoController extends BaseController
                 'label' => 'gambar_foto',
                 'rules' => 'uploaded[gambar_foto]|mime_in[gambar_foto,image/jpg,image/jpeg,image/png]',
                 'errors' => [
-                    'uploaded' => 'Gambar belum pilih',
+                    'uploaded' => 'Gambar belum dipilih',
                     'mime_in' => 'Hanya menerima file berekstensi (jpg, jpeg, png)',
 
                 ],
