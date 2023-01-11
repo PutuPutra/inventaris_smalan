@@ -68,7 +68,7 @@ class mejaController extends BaseController
                 'label' => 'gambar_meja',
                 'rules' => 'uploaded[gambar_meja]|mime_in[gambar_meja,image/jpg,image/jpeg,image/png]',
                 'errors' => [
-                    'uploaded' => 'Gambar belum pilih',
+                    'uploaded' => 'Gambar belum dipilih',
                     'mime_in' => 'Hanya menerima file berekstensi (jpg, jpeg, png)',
 
                 ],

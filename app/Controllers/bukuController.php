@@ -74,7 +74,7 @@ class bukuController extends BaseController
                 'label' => 'gambar_buku',
                 'rules' => 'uploaded[gambar_buku]|mime_in[gambar_buku,image/jpg,image/jpeg,image/png]',
                 'errors' => [
-                    'uploaded' => 'Gambar belum pilih',
+                    'uploaded' => 'Gambar belum dipilih',
                     'mime_in' => 'Hanya menerima file berekstensi (jpg, jpeg, png)',
 
                 ],
