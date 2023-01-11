@@ -112,6 +112,30 @@ $routes->get('/spidol', 'spidolController::spidol', ['filter' => 'login']);
 $routes->get('/tambahSpidol', 'spidolController::tambahSpidol', ['filter' => 'login']);
 $routes->get('/spidol/deleted/(:num)', 'spidolController::deleted/$1', ['filter' => 'login']);
 
+// penghapusController
+$routes->post('/penghapus/store', 'penghapusController::store', ['filter' => 'login']);
+
+// penghapus
+$routes->get('/penghapus', 'penghapusController::penghapus', ['filter' => 'login']);
+$routes->get('/tambahPenghapus', 'penghapusController::tambahPenghapus', ['filter' => 'login']);
+$routes->get('/penghapus/deleted/(:num)', 'penghapusController::deleted/$1', ['filter' => 'login']);
+
+// penaController
+$routes->post('/pena/store', 'penaController::store', ['filter' => 'login']);
+
+// pena
+$routes->get('/pena', 'penaController::pena', ['filter' => 'login']);
+$routes->get('/tambahPena', 'penaController::tambahPena', ['filter' => 'login']);
+$routes->get('/pena/deleted/(:num)', 'penaController::deleted/$1', ['filter' => 'login']);
+
+// penggarisController
+$routes->post('/penggaris/store', 'penggarisController::store', ['filter' => 'login']);
+
+// penggaris
+$routes->get('/penggaris', 'penggarisController::penggaris', ['filter' => 'login']);
+$routes->get('/tambahPenggaris', 'penggarisController::tambahPenggaris', ['filter' => 'login']);
+$routes->get('/penggaris/deleted/(:num)', 'penggarisController::deleted/$1', ['filter' => 'login']);
+
 /*
 * --------------------------------------------------------------------
 * Additional Routing
