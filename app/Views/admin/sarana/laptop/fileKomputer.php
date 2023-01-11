@@ -44,7 +44,8 @@
                         <td><?= $f->jenis_produk_komputer; ?></td>
                         <td>
                             <div class="buttons">
-                                <a href="#" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></i></a>
+                                <a href="<?= base_url('KomputerEdit') . '/' . $f->id ?>" class="btn btn-warning"><i
+                                        class="fa-solid fa-pen-to-square"></i></i></a>
                                 <a href="<?= base_url('deleted') . '/' . $f->id ?>" class="btn btn-danger"><i
                                         class="fa-solid fa-trash"></i></a>
                             </div>
