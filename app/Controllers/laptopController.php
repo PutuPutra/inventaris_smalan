@@ -173,4 +173,26 @@ class laptopController extends BaseController
 
         return view('admin/sarana/laptop/KomputerEdit', $data);
     }
+
+    public function editnya()
+    {
+
+        $data = [
+            'heading' => 'Edit Data Komputer',
+            'sidebar1' => null,
+            'sidebar2' => 'active',
+            'sidebar3' => null,
+            'submenu1' => 'active',
+            'submenu2' => null,
+            'submenu3' => null,
+            'submenu4' => null,
+            'submenu5' => null,
+            'submenu6' => null,
+            'submenu7' => null,
+            'submenu8' => null,
+            'submenu9' => null,
+            'submenu10' => null,
+        ];
+        return view('admin/sarana/laptop/edit', $data);
+    }
 }

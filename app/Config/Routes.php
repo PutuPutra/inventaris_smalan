@@ -61,6 +61,7 @@ $routes->post('/papanTulis/store', 'papanTulisController::store', ['filter' => '
 
 // laptop
 $routes->get('/komputer', 'laptopController::komputer', ['filter' => 'login']);
+$routes->get('/editnya', 'laptopController::editnya', ['filter' => 'login']);
 $routes->get('/tambahLaptop', 'laptopController::tambahLaptop', ['filter' => 'login']);
 $routes->get('/deleted/(:num)', 'laptopController::deleted/$1', ['filter' => 'login']);
 $routes->post('/updateKomputer', 'laptopController::updateKomputer', ['filter' => 'login']);
