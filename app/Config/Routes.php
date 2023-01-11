@@ -42,7 +42,7 @@ $routes->get('/tentang', 'Umum::tentang');
 //admin
 $routes->get('/service', 'Admin::service');
 $routes->get('/login', 'Admin::login');
-$routes->get('/register', 'Admin::register', ['filter' => 'login']);
+// $routes->get('/register', 'Admin::register', ['filter' => 'login']);
 $routes->get('/forgot_password', 'Admin::forgot_password');
 $routes->get('/dashboard', 'Admin::dashboard', ['filter' => 'login']);
 $routes->get('/data', 'Admin::data', ['filter' => 'login']);

@@ -50,10 +50,10 @@ class Admin extends BaseController
     {
         return view('formLogin/authLogin');
     }
-    public function register()
-    {
-        return view('formLogin/authRegister');
-    }
+    // public function register()
+    // {
+    //     return view('formLogin/authRegister');
+    // }
     public function forgot_password()
     {
         return view('formLogin/authforgotpassword');
