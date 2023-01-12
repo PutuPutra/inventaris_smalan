@@ -181,27 +181,8 @@
                         </div>
                     </div>
                 </div>
-                <?= $this->renderSection('content'); ?>
 
-                <!-- <div class="fixed-bottom">
-            <footer>
-                <div class="footer clearfix mb-0 text-muted">
-                    <div class="float-start">
-                        <p>
-                            <script>
-                            document.write(new Date().getFullYear())
-                            </script> &copy; SMAN 9 Bandarlampung
-                        </p>
-                    </div>
-                    <div class="float-end">
-                        <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span>
-                            by
-                            <a href="<?= base_url('tentang') ?>">Non Est Ulla</a>
-                        </p>
-                    </div>
-                </div>
-            </footer>
-        </div> -->
+                <?= $this->renderSection(''); ?>
             </div>
         </div>
         <script src="assets/js/bootstrap.js"></script>

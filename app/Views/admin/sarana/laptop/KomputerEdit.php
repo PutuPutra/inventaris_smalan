@@ -1,6 +1,5 @@
 <?= $this->extend('/layout/templateAdmin'); ?>
-<?= $this->section('content'); ?>
-<!-- Form and scrolling Components start -->
+<?= $this->section(''); ?>
 <section id="form-and-scrolling-components">
     <div class="row">
         <div class="col-md-6 col-12">
@@ -8,7 +7,6 @@
                 <div class="card-content">
                     <div class="card-body">
                         <div class="container">
-
                             <div class="form-group">
                                 <form action="<?= base_url('updateKomputer') ?>" method="POST"
                                     enctype="multipart/form-data">
@@ -19,8 +17,6 @@
                                         <input type="text" class="form-control" id="brand_komputer"
                                             name="brand_komputer" aria-describedby="brand" placeholder="Asus"
                                             value="<?= $files_komputer->brand_komputer; ?>">
-
-
                                     </div>
                                     <div class="mb-3">
                                         <label for="gambar_komputer" class="form-label">Gambar</label>
@@ -71,8 +67,8 @@
                                     <a href="<?= base_url('komputer') ?>" class="btn btn-warning">Kembali</a>
                                 </div>
 
-                            </div>
 
+                            </div>
                             </form>
 
                         </div>
@@ -80,8 +76,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </section>
-<!-- Form and scrolling Components end -->
 <?= $this->endSection(); ?>

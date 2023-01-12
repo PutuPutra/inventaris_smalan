@@ -171,7 +171,7 @@ class laptopController extends BaseController
             'files_komputer' => $files_komputer,
         ];
 
-        return view('admin/sarana/laptop/KomputerEdit', $data);
+        return view('KomputerEdit', $data);
     }
 
     public function editnya()

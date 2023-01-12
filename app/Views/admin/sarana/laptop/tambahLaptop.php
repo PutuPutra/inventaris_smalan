@@ -1,9 +1,5 @@
-<?php
-
-use Faker\Provider\Base;
-?>
 <?= $this->extend('/layout/templateAdmin'); ?>
-<?= $this->section('content'); ?>
+<?= $this->section(''); ?>
 <!-- Form and scrolling Components start -->
 <section id="form-and-scrolling-components">
     <div class="row">
@@ -91,9 +87,9 @@ use Faker\Provider\Base;
 
                             </div>
 
-                            </form>
 
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>
