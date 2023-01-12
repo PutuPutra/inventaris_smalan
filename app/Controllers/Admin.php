@@ -28,10 +28,10 @@ class Admin extends BaseController
     public function settings()
     {
         $data = [
+            'heading' => 'Pengaturan',
             'sidebar1' => null,
             'sidebar2' => null,
             'sidebar3' => null,
-            'heading' => 'Settings',
             'submenu1' => null,
             'submenu2' => null,
             'submenu3' => null,
@@ -43,6 +43,7 @@ class Admin extends BaseController
             'submenu9' => null,
             'submenu10' => null,
         ];
+
         return view('admin/settings', $data);
     }
 
