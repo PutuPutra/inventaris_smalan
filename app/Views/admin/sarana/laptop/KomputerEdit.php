@@ -195,6 +195,11 @@
                                                     <?= csrf_field(); ?>
 
                                                     <div class="mb-3">
+                                                        <label for="brand_komputer" class="form-label"></label>
+                                                        <input type="hidden" class="form-control" id="id" name="id"
+                                                            aria-describedby="id" value="<?= $files_komputer->id; ?>">
+                                                    </div>
+                                                    <div class="mb-3">
                                                         <label for="brand_komputer" class="form-label">Brand</label>
                                                         <input type="text" class="form-control" id="brand_komputer"
                                                             name="brand_komputer" aria-describedby="brand"
