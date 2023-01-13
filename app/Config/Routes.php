@@ -50,6 +50,7 @@ $routes->get('/prasarana', 'Admin::prasarana', ['filter' => 'login']);
 $routes->get('/account', 'Admin::account', ['filter' => 'role:super_admin']);
 $routes->get('/settings', 'Admin::settings', ['filter' => 'role:super_admin']);
 $routes->get('/dashboard', 'Admin::dashboard', ['filter' => 'login']);
+$routes->get('/admin', 'Admin::admin', ['filter' => 'login']);
 $routes->get('/notifications', 'Admin::notifications', ['filter' => 'login']);
 
 
