@@ -35,8 +35,8 @@
                     foreach ($files_buku as $f) : ?>
                     <tr style="text-align: center;">
                         <td><?= $f->penerbit_buku; ?></td>
-                        <td><img class="pictures" src="/assets/foto/<?= $f->gambar_buku; ?>" alt=""
-                                width="100px"></img></td>
+                        <td><img class="pictures" src="/assets/foto/<?= $f->gambar_buku; ?>" alt="" width="100px"></img>
+                        </td>
                         <td><?= $f->kondisi_buku; ?></td>
                         <td style="width: 100px;"><?= $f->deskripsi_buku; ?></td>
                         <td>

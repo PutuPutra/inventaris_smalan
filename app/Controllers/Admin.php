@@ -80,27 +80,7 @@ class Admin extends BaseController
         ];
         return view('admin/dashboard', $data);
     }
-    public function admin()
-    {
-        $data = [
-            'heading' => 'Admin',
-            'sidebar1' => 'active',
-            'sidebar2' => null,
-            'sidebar3' => null,
-            'submenu1' => null,
-            'submenu2' => null,
-            'submenu3' => null,
-            'submenu4' => null,
-            'submenu5' => null,
-            'submenu6' => null,
-            'submenu7' => null,
-            'submenu8' => null,
-            'submenu9' => null,
-            'submenu10' => null,
 
-        ];
-        return view('admin/admin', $data);
-    }
 
 
     public function prasarana()
