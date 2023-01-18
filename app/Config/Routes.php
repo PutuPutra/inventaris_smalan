@@ -47,7 +47,7 @@ $routes->get('/forgot_password', 'Admin::forgot_password');
 $routes->get('/dashboard', 'Admin::dashboard', ['filter' => 'login']);
 $routes->get('/data', 'Admin::data', ['filter' => 'login']);
 $routes->get('/prasarana', 'Admin::prasarana', ['filter' => 'login']);
-$routes->get('/account', 'Admin::account', ['filter' => 'role:super_admin']);
+$routes->get('/account', 'Users::index', ['filter' => 'role:super_admin']);
 $routes->get('/settings', 'Admin::settings', ['filter' => 'role:super_admin']);
 $routes->get('/dashboard', 'Admin::dashboard', ['filter' => 'login']);
 $routes->get('/notifications', 'Admin::notifications', ['filter' => 'login']);
