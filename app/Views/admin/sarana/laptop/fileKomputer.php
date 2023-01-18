@@ -1,5 +1,5 @@
 <?= $this->extend('/layout/templateAdmin'); ?>
-<?= $this->section(''); ?>
+<?= $this->section('content'); ?>
 <section class="section">
     <div class="card">
         <div class="card-header">

@@ -1,5 +1,5 @@
 <?= $this->extend('/layout/templateAdmin'); ?>
-<?= $this->section(''); ?>
+<?= $this->section('content'); ?>
 <section id="form-and-scrolling-components">
     <div class="row">
         <div class="col-md-6 col-12">

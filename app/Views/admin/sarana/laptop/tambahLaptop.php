@@ -1,5 +1,5 @@
 <?= $this->extend('/layout/templateAdmin'); ?>
-<?= $this->section(''); ?>
+<?= $this->section('content'); ?>
 <!-- Form and scrolling Components start -->
 <section id="form-and-scrolling-components">
     <div class="row">

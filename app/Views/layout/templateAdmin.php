@@ -182,7 +182,7 @@
                     </div>
                 </div>
 
-                <?= $this->renderSection(''); ?>
+                <?= $this->renderSection('content'); ?>
             </div>
         </div>
         <script src="assets/js/bootstrap.js"></script>
